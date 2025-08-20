@@ -17,16 +17,16 @@ A Unity editor tool for exporting slices from Texture2DArrays to PNG images and 
 2. Click the `+` button and select `Add package from git URL...`
 3. Enter the following URL:
    ```
-   https://github.com/limblicious/2d-unity-texture-array-tool.git#1.0.0
+   https://github.com/limblicious/2DUnityTextureArrayTool.git#v1.0.1
    ```
 
 ### Via .unitypackage
 
-Download the latest `.unitypackage` from the [Releases](https://github.com/limblicious/2d-unity-texture-array-tool/releases) page and import it into your project.
+Download the latest `.unitypackage` from the [Releases](https://github.com/limblicious/2DUnityTextureArrayTool/releases) page and import it into your project. You can export a `.unitypackage` from this repository root using Unity's `Assets ▸ Export Package...` menu.
 
 ## Usage
 
-1. Open the tool window via `Tools ▸ Texture2DArray Toolkit`
+Open the tool window via `Tools ▸ Texture2DArray Toolkit`
 
 ### Exporting Texture2DArray to PNGs
 
@@ -50,6 +50,27 @@ The tool will create numbered PNG files (`slice_000.png`, `slice_001.png`, etc.)
 4. Click "Build Texture2DArray from PNG folder"
 
 The tool will automatically configure import settings for your source images and create a new Texture2DArray asset.
+
+## Quick Start
+
+1. Open the tool window: `Tools ▸ Texture2DArray Toolkit`
+2. **To export an existing Texture2DArray:**
+   - Drag your Texture2DArray asset into the "Source Array" field
+   - Set export folder path (default: `Assets/Exported_T2DArray`)
+   - Click "Export Slices → PNG"
+
+3. **To build a new Texture2DArray:**
+   - Place your PNG/JPG/TGA images in a folder
+   - Set the import folder path in the tool
+   - Configure width, height, and other settings
+   - Set save path for the new asset
+   - Click "Build Texture2DArray from PNG folder"
+
+### Tips
+- Images are processed alphabetically by filename
+- The tool automatically configures import settings for source textures
+- Use consistent naming (frame_001.png, frame_002.png, etc.) for best results
+- Check the Console window for any import warnings or errors
 
 ## Requirements
 

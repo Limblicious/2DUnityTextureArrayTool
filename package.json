@@ -1,7 +1,7 @@
 {
   "name": "com.limblicious.2dunitytexturearraytool",
   "displayName": "2DUnityTextureArrayTool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2022.3",
   "description": "Editor tools to export slices from a Texture2DArray to PNG and rebuild arrays from images.",
   "keywords": [
@@ -14,12 +14,5 @@
   "author": {
     "name": "limblicious"
   },
-  "license": "MIT",
-  "samples": [
-    {
-      "displayName": "Basic Export Demo",
-      "description": "Quick start guide for using the Texture2DArray Toolkit",
-      "path": "Samples~/Basic Export Demo"
-    }
-  ]
+  "license": "MIT"
 }
